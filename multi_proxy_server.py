@@ -55,7 +55,7 @@ def main():
                 p = Process(target=handle_request, args=(conn, proxy_end))
                 p.daemon = True
                 p.start()
-                print("Started process ", p) 
+                print("Started process ", p)
                 conn.close()
 
 if __name__ == '__main__':
